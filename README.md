@@ -7,7 +7,7 @@ Includes separate **Day / Month / Year** dropdowns for Date of Birth and a **Cou
 ## 🔗 Live Preview
 If you're using GitHub Pages, you can enable Pages and your site will be available at:
 ```
-https://github.com/soniyapptidar-coder/InternshipTask-1.git
+https://github.com/soniya-x/InternshipTask-1
 ```
 
 ## 📁 Project Structure
