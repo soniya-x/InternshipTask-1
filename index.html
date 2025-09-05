@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="top-header">
+    <h2>Modern Registration Form</h2>
+  </header>
+
+  <!-- form container -->
+   <main>
+
+     <section class="form-container">
+       <header class="header">
+         <h2>Student Registration Form</h2>
+       </header>
+       <form>
+         <!-- First Name + Last Name -->
+         <div class="row">
+           <div class="first-name">
+             <label>First Name</label>
+             <input type="text" placeholder="Enter first name" required />
+           </div>
+           <div class="last-name">
+             <label>Last Name</label>
+             <input type="text" placeholder="Enter last name"  required/>
+           </div>
+         </div>
+   
+         <!-- Date of Birth -->
+        
+         <div class="row">
+           <div>
+             <label>Date of Birth</label>
+             <div class="dob">
+               <select id="day">
+                 <option>Day</option>
+               </select>
+               <select id="month">
+                 <option>Month</option>
+               </select>
+               <select id="year">
+                 <option>Year</option>
+               </select>
+             </div>
+           </div>
+         </div>
+   
+         <!-- Email + Mobile -->
+          
+         <div class="row">
+           <div>
+             <label>Email ID</label>
+             <input type="email" placeholder="Enter email address"  required/>
+           </div>
+           <div>
+             <label>Mobile Number</label>
+             <input type="tel" placeholder="Enter 10-digit mobile number" />
+           </div>
+         </div>
+   
+         <!-- Gender -->
+          
+         <div class="row" >
+           <label>Gender</label>
+         </div>
+         <div class="gender-options"  >
+           <label><input type="radio" name="gender" required  /> Female </label>
+           <label><input type="radio" name="gender"  required/> Male</label>
+         </div>
+      
+   
+         <!-- Address -->
+         <br>
+         <div>
+           <label>Address</label>
+           <textarea placeholder="Enter your full address"></textarea>
+         </div>
+         
+       
+   
+         <!-- City, PIN, State -->
+        <br>
+         <div class="row">
+           <div>
+             <label>City</label>
+             <input type="text" placeholder="Enter city" />
+           </div>
+           <div>
+             <label>PIN Code</label>
+             <input type="text" placeholder="Enter 6-digit PIN code" />
+           </div>
+           <div>
+             <label>State</label>
+             <input type="text" placeholder="Enter state" />
+           </div>
+         </div>
+   
+         <!-- Country -->
+          <br>
+         <div>
+           <label>Country</label>
+           <select>
+             <option>Select country</option>
+             <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>China</option>
+            <option>Japan</option>
+            <option>Brazil</option>
+           </select>
+         </div>
+   
+         <!-- Hobbies -->
+         <br />
+         <div class="row">
+           <label>Hobbies</label>
+         </div>
+         <div class="row hobbies-options">
+           <label><input type="checkbox" name="hobby" /> Drawing</label>
+           <label><input type="checkbox" name="hobby" /> Singing</label>
+           <label><input type="checkbox" name="hobby" /> Dancing</label>
+         </div>
+         <div class="row hobbies-options">
+           <label><input type="checkbox" name="hobby" /> Sketching</label>
+           <label><input type="checkbox" name="hobby" /> Others</label>
+         </div>
+   
+         <!-- Qualification Table -->
+          <br>
+         <div>
+           <label>Qualification</label>
+           <table class="qualification-table no-border">
+             <thead>
+               <tr>
+                 <th>Sr. No.</th>
+                 <th>Examination</th>
+                 <th>Board</th>
+                 <th>Percentage</th>
+                 <th>Year of Passing</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>1</td>
+                 <td>Class X</td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+               </tr>
+               <tr>
+                 <td>2</td>
+                 <td>Class XII</td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+               </tr>
+               <tr>
+                 <td>3</td>
+                 <td>Graduation</td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+               </tr>
+               <tr>
+                 <td>4</td>
+                 <td>Masters</td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+                 <td><input type="text" /></td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+   
+         <!-- Course Applied -->
+         <br />
+         <div class="row">
+           <label>Courses Applied For</label>
+         </div>
+         <div class="row course-options">
+           <label><input type="radio" name="course" /> BCA</label>
+           <label><input type="radio" name="course" /> B.Com</label>
+           <label><input type="radio" name="course" /> B.Sc</label>
+           <label><input type="radio" name="course" /> B.A</label>
+         </div>
+   
+         <!-- Buttons -->
+         <div class="btns">
+           <button type="reset" class="reset">Reset</button>
+           <button type="submit" class="submit">Submit</button>
+         </div>
+       </form>
+
+      </div>
+    </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h2>Professional Registration Form</h2>
+  </div>
+
+
+  
+  <script>
+  // Fill Days (1–31)
+  let daySelect = document.getElementById("day");
+  for (let i = 1; i <= 31; i++) {
+    let option = document.createElement("option");
+    option.value = i;
+    option.text = i;
+    daySelect.appendChild(option);
+  }
+
+  // Fill Months (Jan–Dec)
+  let months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  let monthSelect = document.getElementById("month");
+  months.forEach((month, index) => {
+    let option = document.createElement("option");
+    option.value = index + 1; // Month number (1–12)
+    option.text = month;
+    monthSelect.appendChild(option);
+  });
+
+  // Fill Years (1900–2025)
+  let yearSelect = document.getElementById("year");
+  let currentYear = new Date().getFullYear();
+  for (let i = currentYear; i >= 1900; i--) {
+    let option = document.createElement("option");
+    option.value = i;
+    option.text = i;
+    yearSelect.appendChild(option);
+  }
+</script>
+
+</body>
+</html>
