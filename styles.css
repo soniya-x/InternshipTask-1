@@ -129,7 +129,10 @@ textarea {
 
 .qualification-table th,
 .qualification-table td {
-  border: 1px solid #ddd;
+  border-top: 1px solid #ddd;   /* Horizontal border between rows */
+  border-bottom: 1px solid #ddd;
+  border-left: none;            /* Remove left border */
+  border-right: none;           /* Remove right border */
   padding: 10px;
   text-align: center;
 }
@@ -201,3 +204,4 @@ textarea {
   margin: 0;
   color: #00897b;
 }
+
