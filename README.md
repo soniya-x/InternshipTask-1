@@ -51,8 +51,11 @@ git push origin main
 4. Commit changes.
 
 ## Output :
-<img width="542" height="925" alt="image" src="https://github.com/user-attachments/assets/b7beb4f2-88de-4db2-9a8e-6d8749ea23b6" />
-<img width="543" height="919" alt="image" src="https://github.com/user-attachments/assets/20aba44e-a898-4db7-addc-72a1c8fd5ad4" />
+<img width="525" height="929" alt="image" src="https://github.com/user-attachments/assets/0e2062c3-a5e4-4921-99a2-de213b070ff6" />
+
+<img width="477" height="928" alt="image" src="https://github.com/user-attachments/assets/4ceffbee-d384-40db-a9f5-13d6ea8e7b47" />
+
+
 
 ## 🛠️ Tech
 - HTML5
